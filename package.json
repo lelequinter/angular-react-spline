@@ -18,6 +18,8 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.427",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rxjs": "~7.5.0",
