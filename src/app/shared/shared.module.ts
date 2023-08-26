@@ -10,6 +10,9 @@ import { ReactComponentDirective } from './directives/react-component.directive'
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ReactComponentDirective
   ]
 })
 export class SharedModule { }

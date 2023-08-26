@@ -1,7 +1,8 @@
 import { AfterViewInit, Component, OnChanges, OnDestroy, SimpleChanges } from '@angular/core';
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+// import * as React from 'react';
+// import * as ReactDOM from 'react-dom';
 import SplineViewer from "./components/spline-viewer";
+import Spline, { SplineProps } from '@splinetool/react-spline';
 
 @Component({
   selector: 'app-root',
@@ -9,25 +10,32 @@ import SplineViewer from "./components/spline-viewer";
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnChanges, AfterViewInit, OnDestroy {
+export class AppComponent {
 
   title = 'angular-react-spline';
 
-  public reactComponentId = 'reactComponnet';
-
-  ngOnChanges(changes: SimpleChanges){
-    this.render();
+  Spline = Spline;
+  splineProps: SplineProps = {
+    scene: 'https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode'
   }
 
-  ngAfterViewInit(){
-    this.render();
-  }
+  SplineViewer = SplineViewer;
 
-  ngOnDestroy(){
+  // public reactComponentId = 'reactComponnet';
 
-  }
+  // ngOnChanges(changes: SimpleChanges){
+  //   this.render();
+  // }
 
-  private render(){
-    ReactDOM.render(React.createElement(SplineViewer), document.getElementById(this.reactComponentId));
-  }
+  // ngAfterViewInit(){
+  //   this.render();
+  // }
+
+  // ngOnDestroy(){
+
+  // }
+
+  // private render(){
+  //   ReactDOM.render(React.createElement(SplineViewer), document.getElementById(this.reactComponentId));
+  // }
 }

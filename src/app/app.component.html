@@ -5,4 +5,9 @@
   > npm install react react-dom
   > npm install -D @types/react @types/react-dom
 -->
-<div [id]="reactComponentId"></div>
+<!--* Renderizando componente de React directamente en el div -->
+<!-- <div [id]="reactComponentId"></div> -->
+
+<!--* Renderizando componente de React a traves de la directiva -->
+<!-- <div [reactComponent]="SplineViewer"></div> -->
+<div [reactComponent]="Spline" [props]="splineProps"></div>
