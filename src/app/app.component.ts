@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnChanges, OnDestroy, SimpleChanges } from '@angular/core';
+import { Component } from '@angular/core';
 // import * as React from 'react';
 // import * as ReactDOM from 'react-dom';
 import SplineViewer from "./components/spline-viewer";
@@ -7,7 +7,7 @@ import Spline, { SplineProps } from '@splinetool/react-spline';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 
 export class AppComponent {

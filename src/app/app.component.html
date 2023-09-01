@@ -1,4 +1,4 @@
-<h1> Angular / React / Spline </h1>
+<h1>Angular / React / Spline</h1>
 <!-- How Do It -->
 <!--
   You Have to install
@@ -11,3 +11,17 @@
 <!--* Renderizando componente de React a traves de la directiva -->
 <!-- <div [reactComponent]="SplineViewer"></div> -->
 <div [reactComponent]="Spline" [props]="splineProps"></div>
+<!-- <ngt-canvas>
+  <ngt-ambient-light></ngt-ambient-light>
+  <ngt-spot-light [position]="[2, 2, 2]"></ngt-spot-light>
+
+  <ngt-mesh
+    #mesh="ngtMesh"
+    (animateReady)="onAnimate(mesh.mesh)"
+    [position]="[0, 2, 0]"
+  >
+    <ngt-box-geometry></ngt-box-geometry>
+    <ngt-mesh-standard-material [parameters]="{ color: 'red' }">
+    </ngt-mesh-standard-material>
+  </ngt-mesh>
+</ngt-canvas> -->
